@@ -57,7 +57,7 @@ def main_login():
                        obj=smtplib.SMTP('smtp.gmail.com',587)
                        obj.ehlo()
                        obj.starttls()
-                       obj.login("","")                   #login credentials    
+                       obj.login("","")                   #login credentials    ("user_login_email","password")
                        receiver=["",email_of_user]            #reciever mail   
                        obj.sendmail("",receiver,msg)       #sender mail
                        top5.destroy()
